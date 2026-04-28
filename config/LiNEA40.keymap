@@ -66,9 +66,14 @@
     combos {
         compatible = "zmk,combos";
 
-        ZenkakuHankaku {
+        Kana {
             bindings = <&kp LANG1>;
             key-positions = <11 12>;
+        };
+
+        Eisu {
+            bindings = <&kp LANG2>;
+            key-positions = <12 13>;
         };
 
         Delete {
