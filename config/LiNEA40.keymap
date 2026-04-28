@@ -67,7 +67,7 @@
         compatible = "zmk,combos";
 
         ZenkakuHankaku {
-            bindings = <&kp INT_KANA>;
+            bindings = <&kp LANG1>;
             key-positions = <11 12>;
         };
 
