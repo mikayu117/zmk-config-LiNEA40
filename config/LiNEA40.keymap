@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -140,7 +140,7 @@
             bindings = <
 &mo 3          &kp COMMA     &kp DOT             &kp P  &kp Y                                      &kp F        &kp G  &kp C                &kp R          &kp L
 &kp A          &kp O         &kp E               &kp U  &kp I                                      &kp D        &kp H  &kp T                &kp N          &kp S
-&kp Q          &kp J         &kp K               &kp X  &kp B                                      &kp M        &kp W  &kp V                &kp Z          &mo 2
+&mo 2          &kp Q         &kp J               &kp K  &kp X                                      &kp B        &kp M  &kp W                &kp V          &kp Z
 &mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &none  &lt 5 ENTER  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 SPACE         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
@@ -158,10 +158,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION   &kp AT             &kp HASH         &kp DOLLAR         &kp PERCENT                      &kp CARET     &kp AMPERSAND  &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH         &kp CARET          &kp QUESTION     &kp DOUBLE_QUOTES  &kp SEMICOLON                    &kp C_MUTE    &kp LS(LBKT)   &kp RIGHT_BRACKET      &kp BACKSLASH         &kp EQUAL
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_NUMBER_2  &kp APOS           &kp SQT                          &kp KP_EQUAL  &kp INT3       &kp LS(RIGHT_BRACKET)  &kp MINUS             &trans
-&trans            &trans             &trans           &trans             &trans         &trans    &trans  &trans                       &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LEFT_SHIFT
+&trans     &kp AT            &kp HASH           &kp DOLLAR         &kp PERCENT                               &trans        &kp AMPERSAND  &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp CARET         &kp QUESTION       &kp DOUBLE_QUOTES  &kp SEMICOLON                             &kp C_MUTE    &kp LS(LBKT)   &kp RIGHT_BRACKET      &kp BACKSLASH          &kp EQUAL
+&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp APOS           &kp SQT                                   &kp KP_EQUAL  &kp CARET      &kp LS(RIGHT_BRACKET)  &kp MINUS              &trans
+&trans     &trans            &trans             &trans             &kp AT         &kp EXCLAMATION    &trans  &trans                       &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
